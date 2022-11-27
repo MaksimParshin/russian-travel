@@ -162,3 +162,63 @@
 .photo-grid__item {
   width: 100%;
 }
+
+
+/* places */
+
+/* cover */
+
+.cover {
+  width: calc(100% - 96px);
+  margin: 0 auto;
+}
+
+.cover__background {
+  width: 100%;
+  min-height: 740px;
+  position: relative;
+  background-image: url(./images/cover-trains.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cover__overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #2A2C2F;
+  opacity: .3;
+  transition: opacity 2s linear;
+  text-decoration: none;
+}
+
+.cover__overlay:hover {
+  opacity: .8;
+}
+
+.cover__title {
+  max-width: 560px;
+  margin: 0;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #fff;
+}
+
+.cover__subtitle {
+  max-width: 360px;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
