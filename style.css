@@ -148,3 +148,17 @@
   line-height: 18px;
   color: #fff;
 }
+
+/* photo-grid */
+
+.photo-grid {
+  width: calc(100% - 2 * 48px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  gap: 16px;
+}
+
+.photo-grid__item {
+  width: 100%;
+}
