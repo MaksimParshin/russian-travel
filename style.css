@@ -176,17 +176,20 @@
 .cover__background {
   width: 100%;
   min-height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  text-decoration: none;
   background-image: url(./images/cover-trains.jpg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.cover__overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.cover__background::before {
+  content: '';
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -194,11 +197,10 @@
   right: 0;
   background: #2A2C2F;
   opacity: .3;
-  transition: opacity 2s linear;
-  text-decoration: none;
+  transition: 3s linear;
 }
 
-.cover__overlay:hover {
+.cover__background:hover::before {
   opacity: .8;
 }
 
@@ -211,6 +213,8 @@
   font-size: 72px;
   line-height: 76px;
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .cover__subtitle {
@@ -220,5 +224,43 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+/* footer */
+
+.footer {
+  width: calc(100% - 2 * 48px);
+  margin: 0 auto;
+  padding-top: 92px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 18px;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
   color: #fff;
 }
