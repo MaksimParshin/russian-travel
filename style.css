@@ -156,7 +156,9 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  grid-template-rows: auto;
   gap: 16px;
+  padding-bottom: 92px;
 }
 
 .photo-grid__item {
@@ -165,6 +167,61 @@
 
 
 /* places */
+.places {
+  width: calc(100% - 2 * 148px);
+  margin: 0 auto;
+  padding-bottom: 92px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 48px 40px;
+}
+
+.place__title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #fff;
+}
+
+.place__website-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 2px;
+  color: #AAAAAA;
+}
+
+.place__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #fff;
+}
+
+.place__image {
+  width: 100%;
+}
+
+.place__paragraph {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  color: #fff;
+}
+
+.place__paragraph:not(:last-child) {
+  margin-bottom: 26px;
+}
 
 /* cover */
 
