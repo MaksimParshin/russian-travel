@@ -1,0 +1,11 @@
+.place__website {
+  align-self: flex-end;
+}
+
+@media (max-width: 540px) {
+  .place__website {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    align-self: flex-start;
+  }
+}

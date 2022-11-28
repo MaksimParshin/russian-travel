@@ -1,0 +1,6 @@
+@media (max-width: 540px) {
+  .place__text-container {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+}

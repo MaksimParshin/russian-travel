@@ -1,0 +1,33 @@
+.places {
+  width: calc(100% - 2 * 148px);
+  margin: 0 auto;
+  padding-bottom: 92px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+@media (max-width: 1024px) {
+  .places {
+    width: calc(100% - 96px);
+
+  }
+}
+
+@media (max-width: 768px) {
+  .places {
+    width: calc(100% - 48px);
+    padding-bottom: 90px;
+    gap: 73px;
+  }
+}
+
+@media (max-width: 540px) {
+  .places {
+    width: 100%;
+    padding-bottom: 66px;
+    gap: 50px;
+  }
+}
+
+
