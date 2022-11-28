@@ -50,7 +50,9 @@
 
 .header__list {
   display: flex;
+  align-items: flex-end;
   list-style: none;
+  margin: 0;
   padding: 0;
   gap: 18px;
 }
@@ -484,12 +486,14 @@
   }
 
   .lead__title {
+    max-width: 288px;
     margin-bottom: 16px;
     font-size: 40px;
     line-height: 44px;
   }
 
   .lead__subtitle {
+    max-width: 288px;
     margin-bottom: 40px;
     font-size: 16px;
     line-height: 20px;
@@ -543,12 +547,18 @@
     margin: 0 auto;
   }
 
+  .cover__background {
+    min-height: 337px;
+  }
+
   .cover__title {
+    max-width: 288px;
     font-size: 32px;
     line-height: 35px;
   }
 
   .cover__subtitle {
+    max-width: 288px;
     font-size: 14px;
     line-height: 16px;
   }
@@ -556,5 +566,12 @@
   .footer {
     width: calc(100% - 32px);
     padding-top: 64px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .cover__background {
+    min-height: 200px;
   }
 }
