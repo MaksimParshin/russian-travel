@@ -103,6 +103,7 @@
 
 .lead__image {
   width: 100%;
+  object-fit: cover;
 }
 
 .lead__caption {
@@ -165,6 +166,7 @@
 
 .photo-grid__item {
   width: 100%;
+  object-fit: cover;
 }
 
 
@@ -222,6 +224,7 @@
 
 .place__image {
   width: 100%;
+  object-fit: cover;
 }
 
 .place__paragraph {
@@ -253,6 +256,7 @@
   position: relative;
   text-decoration: none;
   background-image: url(./images/cover-trains.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -447,10 +451,6 @@
     font-size: 13vw;
   }
 
-  .cover__title {
-    font-size: 12vw;
-  }
-
   .footer {
     display: flex;
     flex-direction: column;
@@ -555,6 +555,7 @@
     max-width: 288px;
     font-size: 32px;
     line-height: 35px;
+    margin-bottom: 16px;
   }
 
   .cover__subtitle {
