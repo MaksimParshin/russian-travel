@@ -195,7 +195,8 @@
   align-self: flex-end;
 }
 
-.place__website-title {
+.place__url-heading {
+  margin-top: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 170%;
@@ -437,4 +438,123 @@
     padding-top: 88px;
   }
 
+}
+
+@media (max-width: 720px) {
+  .lead__title {
+    font-size: 13vw;
+  }
+
+  .cover__title {
+    font-size: 12vw;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: flex-start;
+  }
+
+  .footer__list {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer__link {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+    width: calc(100% - 32px);
+    padding-top: 16px;
+    padding-bottom: 48px;
+  }
+
+  .header__logo {
+    width: 142px;
+  }
+
+  .header__lang-link {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .lead__title {
+    margin-bottom: 16px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .lead__subtitle {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .intro {
+    width: calc(100% - 32px);
+    padding: 64px 0;
+  }
+
+  .intro__title {
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .photo-grid {
+    width: calc(100% - 32px);
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    gap: 12px;
+    padding-bottom: 64px;
+  }
+
+  .places {
+    width: 100%;
+    padding-bottom: 66px;
+    gap: 50px;
+  }
+
+  .place {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .place__title {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .place__website {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    align-self: flex-start;
+  }
+
+  .place__text-container {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+
+  .cover__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .footer {
+    width: calc(100% - 32px);
+    padding-top: 64px;
+  }
 }
