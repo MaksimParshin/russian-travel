@@ -43,9 +43,21 @@
   }
 }
 
+@media (max-width: 720px) {
+  .cover__background {
+    min-height: 450px;
+  }
+}
+
 @media (max-width: 540px) {
   .cover__background {
     min-height: 337px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cover__background {
+    min-height: 266px;
   }
 }
 
