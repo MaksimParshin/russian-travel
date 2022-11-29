@@ -7,8 +7,6 @@
   font-size: 72px;
   line-height: 76px;
   color: #fff;
-  position: relative;
-  z-index: 1;
 }
 
 @media (max-width: 540px) {
