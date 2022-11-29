@@ -19,6 +19,5 @@
   .header {
     width: calc(100% - 32px);
     padding-top: 16px;
-    padding-bottom: 48px;
   }
 }

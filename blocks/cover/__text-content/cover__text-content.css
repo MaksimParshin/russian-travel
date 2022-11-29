@@ -1,4 +1,4 @@
 .cover__text-content {
-  position: absolute;
-  z-index: 1;
+  position: relative;
+  z-index: 2;
 }

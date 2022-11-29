@@ -4,7 +4,14 @@
   font-size: 16px;
   line-height: 18px;
   color: #fff;
+  opacity: 1;
+  transition: opacity 3s linear;
 }
+
+.footer__link:hover {
+  opacity: .8;
+}
+
 
 @media (max-width: 720px) {
   .footer__link {
