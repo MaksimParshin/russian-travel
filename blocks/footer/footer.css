@@ -18,7 +18,6 @@
 
 @media (max-width: 720px) {
   .footer {
-    display: flex;
     flex-direction: column;
     gap: 48px;
     align-items: flex-start;
